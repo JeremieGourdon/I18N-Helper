@@ -22,12 +22,12 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/JeremieGourdon/I18NIntellisense"
+        "url": "https://github.com/JeremieGourdon/I18N-Helper"
     },
     "bugs": {
-        "url": "https://github.com/JeremieGourdon/I18NIntellisense/issues"
+        "url": "https://github.com/JeremieGourdon/I18N-Helper/issues"
     },
-    "homepage": "https://github.com/JeremieGourdon/I18NIntellisense/blob/main/README.md",
+    "homepage": "https://github.com/JeremieGourdon/I18N-Helper/blob/main/README.md",
     "icon": "images/logo.png",
     "galleryBanner": {
         "color": "#89939E",

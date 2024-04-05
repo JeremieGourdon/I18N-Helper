@@ -20,6 +20,12 @@ Quickly view the value of translation keys by simply hovering over them, saving 
 
 ![Hover Feature](images/hover1.png)
 
+### Create new translation keys
+
+When you open the quickFix menu, you can create a new translation key by selecting the option "Create new translation key". This will open a new input box where you can type the new key. After you press enter, the new key will be created. A prompt will be open for each i18n file present in the translation folder.
+
+![QucikFix Feature](images/quickFix1.png) ![QucikFix Feature](images/quickFix2.png) ![QucikFix Feature](images/quickFix3.png)
+
 ## How to Use
 
 After adding the extension to your Visual Studio Code setup, it automatically activates for projects with a specified root directory for translations. Here's how to make the most of its features:
@@ -27,6 +33,7 @@ After adding the extension to your Visual Studio Code setup, it automatically ac
 -   **Live Translation Updates**: Simply work as you normally would. The extension monitors changes to your translation files and updates them in real time.
 -   **Key Autocompletion**: Start typing a translation key within your code to see suggestions based on existing keys.
 -   **Hover to View Translations**: Move your cursor over a translation key to view its current value in a small popup.
+-   **Create new translation keys**: Open the quickFix menu and select the option "Create new translation key". A prompt will be open for each i18n file present in the translation folder.
 
 ## Configuration
 

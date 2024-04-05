@@ -26,12 +26,6 @@ export function activate(context: ExtensionContext) {
         return;
     }
 
-    const statusBarItem = window.createStatusBarItem(StatusBarAlignment.Left);
-    statusBarItem.text = '$(default-view-icon) testtes';
-    statusBarItem.tooltip = 'Click to open view';
-    statusBarItem.command = 'i18n-helper.openExtensionView';
-    statusBarItem.show();
-
     let i18nFolderPath = Uri.joinPath(rootFolder.uri, CONFIG.dirPath).fsPath;
 
     // Get translation files and create trie
@@ -82,7 +76,6 @@ export function activate(context: ExtensionContext) {
                 updateFiles(files, key);
             },
         ),
-        commands.registerCommand('i18n-helper.openExtensionView', () => {}),
     );
 
     // Trigger completion when typing in quotes

@@ -67,10 +67,6 @@
             {
                 "command": "i18n-helper.createTranslationKey",
                 "title": "Create Translation Key"
-            },
-            {
-                "command": "i18n-helper.openExtensionView",
-                "title": "Open I18N helper"
             }
         ]
     },

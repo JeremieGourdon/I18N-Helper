@@ -1,0 +1,100 @@
+{
+    "name": "i18n-helper-vscode",
+    "displayName": "I18N helper vscode",
+    "description": "And i18n extenstion to help you handle translation",
+    "publisher": "JeremieGourdon",
+    "version": "0.1.4",
+    "license": "SEE LICENSE IN LICENSE",
+    "engines": {
+        "vscode": "^1.87.0"
+    },
+    "pricing": "Free",
+    "categories": [
+        "Programming Languages",
+        "Visualization",
+        "Other"
+    ],
+    "keywords": [
+        "i18n",
+        "intellisense",
+        "translation",
+        "localization"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JeremieGourdon/I18NIntellisense"
+    },
+    "bugs": {
+        "url": "https://github.com/JeremieGourdon/I18NIntellisense/issues"
+    },
+    "homepage": "https://github.com/JeremieGourdon/I18NIntellisense/blob/main/README.md",
+    "icon": "images/logo.png",
+    "galleryBanner": {
+        "color": "#89939E",
+        "theme": "dark"
+    },
+    "preview": true,
+    "activationEvents": [
+        "onLanguage:typescript",
+        "onLanguage:html"
+    ],
+    "main": "./out/extension.js",
+    "files": [
+        "images"
+    ],
+    "contributes": {
+        "configuration": {
+            "title": "I18N helper",
+            "properties": {
+                "i18n-helper.i18nFolderUri": {
+                    "type": "string",
+                    "default": "/src/assets/i18n",
+                    "description": "Uri to the i18n folder"
+                },
+                "i18n-helper.mainLanguage": {
+                    "type": "string",
+                    "default": "fr-FR",
+                    "description": "the name for the file of your main language (without the extension)"
+                },
+                "i18n-helper.displayLoadingMeesage": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Whether to display a message when translations are loaded or not"
+                }
+            }
+        },
+        "commands": [
+            {
+                "command": "i18n-helper.createTranslationKey",
+                "title": "Create Translation Key"
+            },
+            {
+                "command": "i18n-helper.openExtensionView",
+                "title": "Open I18N helper"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "pretest": "npm run compile && npm run lint",
+        "lint": "eslint src --ext ts",
+        "test": "vscode-test",
+        "package": "vsce package --out releases"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.6",
+        "@types/node": "18.x",
+        "@types/vscode": "^1.87.0",
+        "@typescript-eslint/eslint-plugin": "^7.4.0",
+        "@typescript-eslint/parser": "^7.4.0",
+        "@vscode/test-cli": "^0.0.8",
+        "@vscode/test-electron": "^2.3.9",
+        "eslint": "^8.57.0",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "undici-types": "^6.10.1"
+    }
+}
